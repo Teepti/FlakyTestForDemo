@@ -6,4 +6,6 @@ workflows:
       jobs:
         - maven/test:
             test_results_path: target/surefire-reports
+        - store_test_results:
+            path: test-results
 
