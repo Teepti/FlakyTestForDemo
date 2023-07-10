@@ -1,0 +1,8 @@
+version: '2.1'
+orbs:
+  maven: circleci/maven@1.4.1
+workflows:
+    example-workflow:
+      jobs:
+        - maven/test:
+            test_results_path: target/surefire-reports 
